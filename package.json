@@ -1,0 +1,21 @@
+{
+    "name": "tech-interview",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/mocha": "^9.0.0",
+        "@types/node": "^16.10.3",
+        "@types/sinon": "^10.0.4",
+        "mocha": "^9.1.2",
+        "sinon": "^11.1.2",
+        "ts-node": "^10.2.1"
+    },
+    "scripts": {
+        "test": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha --require ts-node/register",
+        "test:watch": "yarn test --watch"
+    },
+    "dependencies": {
+        "typescript": "^4.4.3"
+    }
+}
